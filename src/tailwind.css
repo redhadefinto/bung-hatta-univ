@@ -1345,6 +1345,10 @@ html {
   height: 100%;
 }
 
+.h-\[370px\] {
+  height: 370px;
+}
+
 .max-h-\[50\%\] {
   max-height: 50%;
 }
@@ -1510,6 +1514,11 @@ html {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#FFF3EE\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 243 238 / var(--tw-bg-opacity));
 }
 
 .bg-cover {
