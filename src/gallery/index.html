@@ -10,14 +10,14 @@
   <link rel="stylesheet" href="../tailwind.css">
 </head>
 <body>
-  <header class="sticky top-0 bg-dark-blue z-20">
+  <header class="sticky bg-primary top-0 z-20">
     <div class="h-[60px] flex items-center px-4 md:px-12 lg:px-16">
       <div class="flex-2 h-full" id="logo">
-        <a href="../../index.html" class="items-center flex">
+        <a href="../../" class="items-center flex">
           <img src="../images/ika_berdaya.png" alt="" width="50" />
           <div class="flex flex-col">
-            <p class="ml-2 text-white font-bold">Ikatan Keluarga Alumni</p>
-            <p class="ml-2 text-white font-bold" style="letter-spacing: 1.4px;">Bung Hatta Berdaya</p>
+            <p class="ml-2 text-secondary font-bold text-text-small md:text-lg lg:text-base">IKATAN KELUARGA ALUMNI</p>
+            <p class="ml-2 text-secondary font-bold text-text-small md:text-lg lg:text-lg " style="letter-spacing: 1.4px;">BUNG HATTA BERDAYA</p>
           </div>
         </a>
       </div>
@@ -31,24 +31,24 @@
       </div>
     </div>
   </header>
-  <div class="min-h-[100vh] z-10 bg-dark-blue min-w-full py-8 px-4 fixed right-[-300%] lg:min-h-[50vh]" id="nav-active" style="animation: 0.9s ease-out;">
-    <p><a href="../" class="text-[#fff] font-bold">Home</a></p>
+  <div class="min-h-[100vh] z-10 min-w-full py-8 px-4 fixed bg-glass right-[-300%] lg:min-h-[50vh]" id="nav-active" style="animation: 0.9s ease-out; background-color: rgba(12,12,12,.8);">
+    <p><a href="../../" class="text-[#fff] font-bold">Home</a></p>
     <div class="flex flex-col gap-4 mt-2">
-        <li class="text-orange-400"><a href="" class="text-text-nav">Tentang Ika Bung Hatta Berdaya</a></li>
-        <li class="text-orange-400"><a href="" class="text-text-nav">Keuntungan Bergabung</a></li>
-        <li class="text-orange-400"><a href="" class="text-text-nav">Program Kami</a></li>
-        <li class="text-orange-400"><a href="" class="text-text-nav">Visi Misi</a></li>
+        <li class="text-white"><a href="#tentang" class="hover:text-orange-500">Tentang Ika Bung Hatta Berdaya</a></li>
+        <li class="text-white"><a href="" class="hover:text-orange-500">Keuntungan Bergabung</a></li>
+        <li class="text-white"><a href="" class="hover:text-orange-500">Program Kami</a></li>
+        <li class="text-white"><a href="" class="hover:text-orange-500">Visi Misi</a></li>
     </div>
     <div class="mt-8">
-      <p><a href="" class="text-[#fff] font-bold">Berita</a></p>
+      <p><a href="../berita/" class="text-[#fff] font-bold">Berita</a></p>
       <div class="flex flex-col gap-4 mt-2">
-        <li class="text-orange-400"><a href="../struktur-organisasi/" class="text-text-nav">Struktur Organisasi</a></li>
-        <li class="text-orange-400"><a href="./" class="text-text-nav">Galery</a></li>
-        <li class="text-orange-400"><a href="" class="text-text-nav">Cerita Alumni</a></li>
+        <li class="text-white"><a href="../struktur-organisasi/" class="hover:text-orange-500">Struktur Organisasi</a></li>
+        <li class="text-white"><a href="../src/gallery/" class="hover:text-orange-500">Galery</a></li>
+        <li class="text-white"><a href="" class="hover:text-orange-500">Cerita Alumni</a></li>
       </div>
     </div>
     <div class="mt-8">
-      <li class="text-orange-400"><a href="" class="text-[#fff]">Kontak Kami</a></li>
+      <li class="text-white"><a href="../kontak/" class="text-[#fff] hover:text-orange-500">Kontak Kami</a></li>
     </div>
   </div>
   <main class="">
@@ -59,38 +59,37 @@
           <div id="slide1" class="carousel-item relative w-full">
             <img src="../images/bung_hattajpg-1523346476.jpg" class="w-full" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide4" class="btn btn-circle">❮</a> 
-              <a href="#slide2" class="btn btn-circle">❯</a>
+              <a href="#slide4" class="btn btn-circle bg-white">❮</a> 
+              <a href="#slide2" class="btn btn-circle bg-white">❯</a>
             </div>
           </div> 
           <div id="slide2" class="carousel-item relative w-full">
             <img src="../images/berita-images/Web capture_11-3-2023_155052_dutametro.com.jpeg" class="w-full" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide1" class="btn btn-circle">❮</a> 
-              <a href="#slide3" class="btn btn-circle">❯</a>
+              <a href="#slide1" class="btn btn-circle bg-white">❮</a> 
+              <a href="#slide3" class="btn btn-circle bg-white">❯</a>
             </div>
           </div> 
           <div id="slide3" class="carousel-item relative w-full">
             <img src="/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide2" class="btn btn-circle">❮</a> 
-              <a href="#slide4" class="btn btn-circle">❯</a>
+              <a href="#slide2" class="btn btn-circle bg-white">❮</a> 
+              <a href="#slide4" class="btn btn-circle bg-white">❯</a>
             </div>
           </div> 
           <div id="slide4" class="carousel-item relative w-full">
             <img src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide3" class="btn btn-circle">❮</a> 
-              <a href="#slide1" class="btn btn-circle">❯</a>
+              <a href="#slide3" class="btn btn-circle bg-white">❮</a> 
+              <a href="#slide1" class="btn btn-circle bg-white">❯</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </main>
-<hr class="text-white scale-y-150 mt-16" style="box-shadow: rgba(209, 207, 207, 0.801) 0px 3px 8px;">
-<footer class="min-h-[600px] py-8 px-4">
-  <div class="flex flex-col">
+<footer class="min-h-[600px] bg-no-repeat bg-cover bg-center bg-fixed" style="background-image: url('../images/zoom-bg.jpg'); background-position-y: 100%;">
+  <div class="flex flex-col bg-footer py-8 px-4 h-full w-full" style="background-color: rgba(0, 0, 0, 0.6);">
     <section class="flex-1 h-full flex items-center flex-col gap-4">
       <div class="flex flex-col w-full">
         <img src="../images/ika_berdaya.png" alt="" width="140" class="self-center" />
@@ -101,36 +100,35 @@
         </div>
       <div class="flex gap-4">
         <div class="icon">
-          <img src="../icon/Facebook.png" alt="" width="50">
+          <img src="./src/icon/Facebook.png" alt="" width="50">
         </div>
         <div class="icon">
-          <img src="../icon/Instagram.png" alt="" width="50">
+          <img src="./src/icon/Instagram.png" alt="" width="50">
         </div>
         <div class="icon">
-          <img src="../icon/twitter.png" alt="" width="50">
+          <img src="./src/icon/twitter.png" alt="" width="50">
         </div>
       </div>
         <div class="min-w-full py-8 px-4 md:grid md:grid-cols-2">
           <div class="flex flex-col gap-4 mt-2 md:mt-0 md:pl-20">
-            <p><a href="" class="text-[#fff] font-bold">Home</a></p>
-              <li class="text-orange-400 hover:text-white"><a href="" class="text-text-nav hover:text-white">Tentang Ika Bung Hatta Berdaya</a></li>
-              <li class="text-orange-400"><a href="" class="text-text-nav hover:text-white">Keuntungan Bergabung</a></li>
-              <li class="text-orange-400"><a href="" class="text-text-nav hover:text-white">Program Kami</a></li>
-              <li class="text-orange-400"><a href="" class="text-text-nav hover:text-white">Visi Misi</a></li>
+            <p class=""><a href="../../" class="text-white hover:text-orange-500 font-bold">Home</a></p>
+              <li class="text-white"><a href="#tentang" class="text-text-nav hover:text-orange-500">Tentang Ika Bung Hatta Berdaya</a></li>
+              <li class="text-white"><a href="" class="text-text-nav hover:text-orange-500">Keuntungan Bergabung</a></li>
+              <li class="text-white"><a href="" class="text-text-nav hover:text-orange-500">Program Kami</a></li>
+              <li class="text-white"><a href="" class="text-text-nav hover:text-orange-500">Visi Misi</a></li>
           </div>
           <div class="mt-8 flex flex-col gap-4 md:mt-0 md:pl-20">
-            <p><a href="" class="text-[#fff] font-bold">Berita</a></p>
+            <p><a href="../berita/" class="text-[#fff] font-bold">Berita</a></p>
             <div class="flex flex-col gap-4 mt-2 md:mt-0">
-              <li class="text-orange-400"><a href="" class="text-text-nav hover:text-white">Struktur Organisasi</a></li>
-              <li class="text-orange-400"><a href="" class="text-text-nav hover:text-white">Galery</a></li>
-              <li class="text-orange-400"><a href="" class="text-text-nav hover:text-white">Cerita Alumni</a></li>
-              <li class="text-orange-400"><a href="" class="text-[#fff] hover:text-white">Kontak Kami</a></li>
+              <li class="text-white"><a href="../struktur-organisasi/" class="text-text-nav hover:text-orange-500">Struktur Organisasi</a></li>
+              <li class="text-white"><a href="../gallery/" class="text-text-nav hover:text-orange-500">Galery</a></li>
+              <li class="text-white"><a href="" class="text-text-nav hover:text-orange-500">Cerita Alumni</a></li>
+              <li class="text-white"><a href="../kontak/" class="text-[#fff] hover:text-orange-500">Kontak Kami</a></li>
             </div>
           </div>
         </div>
-        <p>©ikabunghattaberdaya2023</p>
+        <p class="text-white">©ikabunghattaberdaya2023</p>
     </section>
-    <div class=""></div>
   </div>
 </footer>
 </body>
