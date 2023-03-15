@@ -21,3 +21,15 @@ for (i = 0; i < len; i++) {
 }
 
 const logo = document.getElementById('logo')
+
+// const navTentang = document.getElementById('nav-tentang')
+// const tentang = document.getElementById('tentang')
+// tentang.scrollIntoView({
+//   block: 'start',
+//   behavior: "smooth",
+//   inline: "end"
+// })
+
+
+
+

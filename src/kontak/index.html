@@ -43,7 +43,7 @@
       <div class="flex flex-col gap-4 mt-2">
         <li class="text-white"><a href="../struktur-organisasi/" class="hover:text-orange-500">Struktur Organisasi</a></li>
         <li class="text-white"><a href="../gallery/" class="hover:text-orange-500">Galery</a></li>
-        <li class="text-white"><a href="" class="hover:text-orange-500">Cerita Alumni</a></li>
+        <li class="text-white"><a href="" class="hover:text-orange-500">Event</a></li>
       </div>
     </div>
     <div class="mt-8">
@@ -54,7 +54,16 @@
   <div class="py-12 px-8 md:px-12 lg:flex lg:flex-col lg:justify-center lg:items-center">
   <div class="card lg:w-[50%]">
     <div class="card2 flex flex-col">
-      <form class="form flex flex-col lg:gap-12" id="db-alumni">
+      <form class="form" id="db-alumni">
+      <div class="hidden h-[100px]" id="alert">
+        <div class="alert bg-green-900 text-white shadow-lg">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            <span>Your purchase has been confirmed!</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col lg:gap-12" id="box-form">
         <p id="heading">Daftar</p>
         <div class="field px-4">
           <input type="text" class="input-field" placeholder="Nama Lengkap" autocomplete="off" name="nama lengkap">
@@ -63,7 +72,7 @@
           <input type="text" class="input-field" placeholder="Email" name="email">
         </div>
         <div class="field px-4">
-          <input type="text" class="input-field" placeholder="Tahun Alumni" name="tahun alumni">
+          <input type="text" class="input-field" placeholder="Jurusan Dan Tahun Alumni" name="tahun alumni">
         </div>
         <div class="field px-4">
           <input type="number" class="input-field" placeholder="Nomor Telepon / HP" name="no telepon / hp">
@@ -72,8 +81,18 @@
           <textarea class="input-field" placeholder="Pesan" name="pesan"></textarea>
         </div>
         <div class="flex justify-center items-start">
-          <button class="button3">Submit</button>
+          <button class="button3" id="btn-submit">Submit</button>
         </div>
+        <div class="flex justify-center items-center pb-4">
+          <div class="loader hidden" id="loaders">
+            <div class="orbe" style="--index: 0"></div>
+            <div class="orbe" style="--index: 1"></div>
+            <div class="orbe" style="--index: 2"></div>
+            <div class="orbe" style="--index: 3"></div>
+            <div class="orbe" style="--index: 4"></div>
+          </div>
+        </div>
+      </div>
       </form>
       </div>
     </div>
@@ -92,13 +111,19 @@
         </div>
       <div class="flex gap-4">
         <div class="icon">
-          <img src="./src/icon/Facebook.png" alt="" width="50">
+          <a href="https://www.facebook.com/profile.php?id=100079925951033">
+            <img src="../icon/Facebook.png" alt="" width="50">
+          </a>
         </div>
         <div class="icon">
-          <img src="./src/icon/Instagram.png" alt="" width="50">
+          <a href="https://www.instagram.com/ika_bunghatta_berdaya/">
+            <img src="../icon/Instagram.png" alt="" width="50">
+          </a>
         </div>
         <div class="icon">
-          <img src="./src/icon/twitter.png" alt="" width="50">
+          <a href="https://twitter.com/IkaBungHattaBe1">
+            <img src="../icon/twitter.png" alt="" width="50">
+          </a>
         </div>
       </div>
         <div class="min-w-full py-8 px-4 md:grid md:grid-cols-2">
@@ -114,7 +139,7 @@
             <div class="flex flex-col gap-4 mt-2 md:mt-0">
               <li class="text-white"><a href="../struktur-organisasi/" class="text-text-nav hover:text-orange-500">Struktur Organisasi</a></li>
               <li class="text-white"><a href="../gallery/" class="text-text-nav hover:text-orange-500">Galery</a></li>
-              <li class="text-white"><a href="" class="text-text-nav hover:text-orange-500">Cerita Alumni</a></li>
+              <li class="text-white"><a href="" class="text-text-nav hover:text-orange-500">Event</a></li>
               <li class="text-white"><a href="../kontak/" class="text-[#fff] hover:text-orange-500">Daftar</a></li>
             </div>
           </div>
