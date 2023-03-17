@@ -13,7 +13,7 @@ const scriptURL =
 const form = document.forms["db-alumni"];
 const loader = document.getElementById('loaders')
 const btnSubmit = document.getElementById('btn-submit')
-const alert = document.getElementById('alert')
+const boxAlert = document.getElementById('alert')
 const boxFrom = document.getElementById('box-form')
 
 // const btnSubmit = document.getElementById('btn-submit')
@@ -49,27 +49,27 @@ btnSubmit.addEventListener("click", (e) => {
   const phoneNumber =
     /\+62\s\d{3}[-\.\s]??\d{3}[-\.\s]??\d{3,4}|\(0\d{2,3}\)\s?\d+|0\d{2,3}\s?\d{6,7}|\+62\s?361\s?\d+|\+62\d+|\+62\s?(?:\d{3,}-)*\d{3,5}/;
 
-  if (name.value == "") {
+  if (name.value === "") {
     errorName.innerHTML = '<p>Nama harus Di isi</p>'
     return;
   }
-  if(email.value == "") {
+  if(email.value === "") {
     errorEmail.innerHTML = `<p>Email harus di isi</p>`
     return;
   }
-  if(alumni.value == "") {
+  if(alumni.value === "") {
     errorAlumni.innerHTML = `<p>jurusan dan tahun Alumni harus di isi</p>`
     return;
   }
-  if(phone.value == "") {
+  if(phone.value === "") {
     errorPhone.innerHTML = `<p>No Handphone harus di isi</p>`
     return;
   }
-  if(pekerjaan.value == "") {
+  if(pekerjaan.value === "") {
     errorPekerjaan.innerHTML = `<p>Pekerjaan sekarang harus di isi</p>`
     return;
   }
-  if(pesan.value == "") {
+  if(pesan.value === "") {
     errorPesan.innerHTML = `<p>Pesan harus di isi</p>`
     return;
   }
@@ -92,7 +92,7 @@ btnSubmit.addEventListener("click", (e) => {
   .catch((error) => console.error("Error!", error.message))
   .finally(() => {
     boxFrom.innerHTML = `<div class="min-h-[400px]"></div>`
-    alert.classList.toggle('hidden')
+    boxAlert.classList.toggle('hidden')
     loader.classList.toggle('hidden')
     btnSubmit.classList.toggle('hidden')
     })
