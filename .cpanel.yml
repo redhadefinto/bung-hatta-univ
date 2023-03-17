@@ -4,4 +4,4 @@ deployment:
     - export DEPLOYPATH=/home/n1574052/public_html/
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp -R css $DEPLOYPATH
-    -/bin/cp -R src $DEPLOYPATH
+    - /bin/cp -R src $DEPLOYPATH
