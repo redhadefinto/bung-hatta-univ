@@ -5,18 +5,11 @@ burger.addEventListener("click", () => {
   navActive.classList.toggle("right-[-300%]");
 });
 
-const dbAlumni = document.getElementById('db-alumni')
-
-
-const scriptURL =
-  "https://script.google.com/macros/s/AKfycbzsDumKwNZ_vD89sLYpUepgX-SvCGNwAhB_9DA1sjHPyLHG4MaA0JsSj35Bkh98GITx/exec";
-const form = document.forms["db-alumni"];
-const loader = document.getElementById('loaders')
-const btnSubmit = document.getElementById('btn-submit')
-const boxAlert = document.getElementById('alert')
-const boxFrom = document.getElementById('box-form')
 
 // const btnSubmit = document.getElementById('btn-submit')
+
+// const validator = require("email-validator");
+
 const name = document.getElementById('name')
 const email = document.getElementById('email')
 const alumni = document.getElementById('alumni')
@@ -31,18 +24,25 @@ const errorPhone = document.getElementById('error-phone')
 const errorPekerjaan = document.getElementById('error-pekerjaan')
 const errorPesan = document.getElementById('error-pesan')
 
-// const validator = require("email-validator");
+const dbAlumni = document.getElementById("db-alumni");
 
-btnSubmit.addEventListener("click", (e) => {
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbzsDumKwNZ_vD89sLYpUepgX-SvCGNwAhB_9DA1sjHPyLHG4MaA0JsSj35Bkh98GITx/exec";
+const form = document.forms["db-alumni"];
+const loader = document.getElementById("loaders");
+const btnSubmit = document.getElementById("btn-submit");
+const boxFrom = document.getElementById("box-form");
+
+form.addEventListener("submit", (e) => {
   e.preventDefault();
-  
+
   errorName.innerHTML = '';
-  errorEmail.innerHTML = '';
-  errorAlumni.innerHTML = '';
-  errorPhone.innerHTML = '';
-  errorPekerjaan.innerHTML = '';
-  errorPesan.innerHTML = ''
-  
+    errorEmail.innerHTML = '';
+    errorAlumni.innerHTML = '';
+    errorPhone.innerHTML = '';
+    errorPekerjaan.innerHTML = '';
+    errorPesan.innerHTML = ''
+
   const emailValidate =
     /^[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*$/;
 
@@ -83,17 +83,26 @@ btnSubmit.addEventListener("click", (e) => {
     return;
   }
 
-  loader.classList.toggle('hidden')
-  btnSubmit.classList.toggle('hidden')
+  loader.classList.toggle("hidden");
+  btnSubmit.classList.toggle("hidden");
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
-  .then((response) => {
-    console.log("Success!", response) 
-  })
-  .catch((error) => console.error("Error!", error.message))
-  .finally(() => {
-    boxFrom.innerHTML = `<div class="min-h-[400px]"></div>`
-    boxAlert.classList.toggle('hidden')
-    loader.classList.toggle('hidden')
-    btnSubmit.classList.toggle('hidden')
+    .then((response) => {
+      console.log("Success!", response);
     })
+    .catch((error) => console.error("Error!", error.message))
+    .finally(() => {
+      // boxFrom.innerHTML = `<div class="min-h-[400px]"></div>`;
+      dbAlumni.innerHTML = `<div class="min-h-[400px]">
+        <div class="alert bg-green-900 text-white shadow-lg">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            <span>Your purchase has been confirmed!</span>
+          </div>
+        </div>
+      </div>`;
+      // boxAlert.classList.toggle("hidden");
+      loader.classList.toggle("hidden");
+      btnSubmit.classList.toggle("hidden");
+    });
 });
+
