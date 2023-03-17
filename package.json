@@ -1,0 +1,18 @@
+{
+  "name": "bung-hatta",
+  "version": "1.0.0",
+  "description": "website for ika bung hatta",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./css/index.css -o ./src/tailwind.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "daisyui": "^2.51.3",
+    "email-validator": "^2.0.4"
+  }
+}
