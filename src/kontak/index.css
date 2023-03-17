@@ -194,3 +194,6 @@ body {
     transform: rotate(360deg);
   }
 }
+.peer-invalid {
+  border: 2px solid #e53e3e;
+}

@@ -4,20 +4,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ika Bung Hatta Berdaya">
   <title>Ika Bung Hatta Berdaya</title>
+  <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
   <link rel="stylesheet" href="./src/tailwind.css">
   <link rel="stylesheet" href="./src/index.css">
   <link rel="shortcut icon" href="./src/images/logo_alumni.png" />
 </head>
 <body class="">
-  <header class="sticky bg-primary top-0 z-20">
+  <header class="sticky bg-primary top-0 z-20" style="box-shadow: rgba(243, 130, 0, 0.801) 0px 3px 8px;">
     <div class="h-[60px] flex items-center px-4 md:px-12 lg:px-16">
       <div class="flex-2 h-full" id="logo">
         <a href="./" class="items-center flex">
-          <img src="./src/images/ika_berdaya.png" alt="" width="50" />
+          <img src="./src/images/ika_berdaya.webp" alt="" width="50" height="auto" />
           <div class="flex flex-col">
-            <p class="ml-2 text-secondary font-bold text-text-small md:text-lg lg:text-base">IKATAN KELUARGA ALUMNI</p>
-            <p class="ml-2 text-secondary font-bold text-text-small md:text-lg lg:text-lg " style="letter-spacing: 1.4px;">BUNG HATTA BERDAYA</p>
+            <p class="ml-2 text-orange-700 font-bold text-text-small md:text-lg lg:text-base">IKATAN KELUARGA ALUMNI</p>
+            <p class="ml-2 text-orange-700 font-bold text-text-small md:text-lg lg:text-lg " style="letter-spacing: 1.4px;">BUNG HATTA BERDAYA</p>
           </div>
         </a>
       </div>
@@ -35,9 +37,9 @@
     <p><a href="#" class="text-[#fff] font-bold">Home</a></p>
     <div class="flex flex-col gap-4 mt-2">
         <li class="text-white"><a href="#tentang" class="hover:text-orange-500" id="nav-tentang">Tentang Ika Bung Hatta Berdaya</a></li>
-        <li class="text-white"><a href="" class="hover:text-orange-500">Keuntungan Bergabung</a></li>
-        <li class="text-white"><a href="" class="hover:text-orange-500">Program Kami</a></li>
-        <li class="text-white"><a href="" class="hover:text-orange-500">Visi Misi</a></li>
+        <li class="text-white"><a href="#keuntungan" class="hover:text-orange-500">Keuntungan Bergabung</a></li>
+        <li class="text-white"><a href="#program" class="hover:text-orange-500">Program Kami</a></li>
+        <li class="text-white"><a href="./src/visi-misi/" class="hover:text-orange-500">Visi Misi</a></li>
     </div>
     <div class="mt-8">
       <p><a href="./src/berita/" class="text-[#fff] font-bold">Berita</a></p>
@@ -52,7 +54,7 @@
     </div>
   </div>
 <main>
-  <div class="hero min-h-screen bg-center bg-cover bg-no-repeat" style="background-image: url('./src/images/bung-hatta.jpg') "/>
+  <div class="hero min-h-screen bg-center bg-cover bg-no-repeat" style="background-image: url('./src/images/bung-hatta.webp') "/>
   <div class="hero-overlay" style="background-color: rgba(12,12,12,.5);">
     <div class="hero-content text-center h-full flex">
       <div class="max-w-md min-h-full flex pt-28 justify-center flex-col">
@@ -65,8 +67,8 @@
   </div>
 <div class="min-h-[500px] pb-36 py-12 px-4 md:px-12 bg-cover bg-no-repeat" id="tentang" style="background-image: url('./src/images/bulat-bulat/circle-scatter-haikei.svg');">
   <h2 class="text-center text-2xl  font-bold md:text-3xl md:mb-12 lg:mb-16">Tentang IKA Bung Hatta Berdaya</h2>
-  <div>
-    <img src="./src/images/background (1).jpg" alt="" width="100%" class="mt-8 rounded-xl" style="box-shadow: rgba(209, 207, 207, 0.801) 0px 3px 8px;">
+  <div data-aos="fade-up">
+    <img src="./src/images/background (1).webp" alt="" width="100%" class="mt-8 rounded-xl" style="box-shadow: rgba(209, 207, 207, 0.801) 0px 3px 8px;" height="auto">
     <div class="text-grey">
       <p class="mb-4 mt-8 md:mt-12 md:text-lg">Sederhana, simple tapi penuh makna. Ketiga hal ini yang mengilhami logo dan nama organisasi alumni, IKA (IKATAN KELUARGA ALUMNI). Nama ini dipilih karena mencerminkan suatu ikatan kekeluargaan antara alumni.</p>
       <p class="mb-4 md:text-lg">IKA Bung Hatta Berdaya adalah payung besar dan rumah bagi semua organisasi alumni dari semua departemen atau jurusan di Bung Hatta University yang tersebar di seluruh Indonesia. IKA Bung Hatta Berdaya adalah rumah bagi semua alumni, rumah bagi semua Alumni Universitas Bung hatta. “Kerinduan saya adalah melihat semua Alumni berkumpul menjadi satu keluarga dan menjalin keakraban antara kita.”</p>
@@ -77,19 +79,19 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#FFF3EE" fill-opacity="1" d="M0,0L60,32C120,64,240,128,360,170.7C480,213,600,235,720,213.3C840,192,960,128,1080,96C1200,64,1320,64,1380,64L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
     </svg>
-<div class="min-h-[400px] p-4 bg-[#FFF3EE] py-8 md:px-12">
+<div class="min-h-[400px] p-4 bg-[#FFF3EE] py-8 md:px-12" id="keuntungan">
   <p class="text-center text-2xl text-black font-bold mb-4 md:mb-8">Keuntungan Bergabung di IKA Bung Hatta Berdaya</p>
   <div class="grid grid-cols-1 md:grid-cols-2 md:grid-flow-dense md:gap-8">
-    <div class="h-[325px] mt-8 bg-white text-black rounded-xl px-3" style="box-shadow: rgba(250, 79, 0, 0.801) 0px 3px 8px">
+    <div class="h-[325px] mt-8 bg-white text-black rounded-xl px-3" style="box-shadow: rgba(250, 79, 0, 0.801) 0px 3px 8px" data-aos="fade-up">
       <div class="flex justify-center">
-        <img src="./src/images/card-images/networking-removebg-preview.png" alt="" width="130">
+        <img src="./src/images/card-images/networking-removebg-preview.webp" alt="" width="130" height="130">
       </div>
       <p class="text-center font-bold text-2xl mb-4">Networking yang luas</p>
       <p class="font-semibold text-slate-900 text-center">Para Alumni bisa mendapatkan jaringan koneksi yang luas dengan semua Alumni yang tersebar di seluruh Indonesia bahkan Dunia.</p>
     </div>
     <div class="h-[325px] mt-8 bg-white text-black rounded-xl px-3 py-8" style="box-shadow: rgba(250, 79, 0, 0.801) 0px 3px 8px">
       <div class="flex justify-center">
-        <img src="./src/images/card-images/team-work.png" alt="" width="130">
+        <img src="./src/images/card-images/team-work.webp" alt="" width="130" height="130">
       </div>
       <p class="text-center font-bold text-2xl mb-4 mt-4">Mendapatkan bantuan dari para Alumni</p>
       <p class="font-semibold text-slate-900 text-center">Alumni berkesempatan mendapatkan bantuan baik materil maupun immateril</p>
@@ -103,50 +105,50 @@
     </div> -->
     <div class="h-[325px] mt-8 bg-white text-black rounded-xl px-3" style="box-shadow: rgba(250, 79, 0, 0.801) 0px 3px 8px">
       <div class="flex justify-center">
-        <img src="./src/images/card-images/colaboration.jpg" alt="" width="130">
+        <img src="./src/images/card-images/colaboration.webp" alt="" width="130" height="130">
       </div>
       <p class="text-center font-bold text-2xl mb-8">Collaboration opportunity</p>
       <p class="font-semibold text-slate-900 text-center">Kesempatan untuk bekerja sama dengan sesama para Alumni.</p>
     </div>
     <div class="h-[325px] mt-8 bg-white text-black rounded-xl px-3 mb-12" style="box-shadow: rgba(250, 79, 0, 0.801) 0px 3px 8px">
       <div class="flex justify-center">
-        <img src="./src/images/card-images/loker.png" alt="" width="130">
+        <img src="./src/images/card-images/loker.webp" alt="" width="130" height="130">
       </div>
       <p class="text-center font-bold text-2xl mb-8">Kesempatan kerja</p>
       <p class="font-semibold text-slate-900 text-center">Para Alumni dapat mencari lowongan pekerjaan yang dibuka oleh sesama Alumni.</p>
     </div>
   </div>
 </div>
-<div class="h-[400px] bg-center bg-no-repeat bg-fixed w-full" style="background-image: url('./src/images/zoom-bg.jpg'); background-position-y: 100%;">
+<div class="h-[400px] bg-center bg-no-repeat bg-fixed w-full" style="background-image: url('./src/images/zoom-bg.webp'); background-position-y: 100%;">
   <div class="w-full h-full " style="background-color: rgba(0, 0, 0, 0.4);"></div>
 </div>
-<div class="min-h-[320px] p-4 py-8 md:px-12" style="background: linear-gradient(90deg, rgba(241,166,91,1) 13%, rgba(238,190,44,1) 50%);">
+<div class="min-h-[320px] p-4 py-8 md:px-12" style="background: linear-gradient(90deg, rgba(241,166,91,1) 13%, rgba(238,190,44,1) 50%);" id="program">
   <p class="text-center text-3xl text-[#0d0718] font-bold md:mb-8 md:text-4xl">Program Kami</p>
   <div class="grid grid-cols-1 md:grid-cols-2 md:grid-flow-dense md:gap-8">
     <div class="h-[370px] mt-8 bg-white text-black rounded-xl px-3 pt-8" style="box-shadow: rgba(0, 0, 0, 0.801) 0px 3px 8px">
       <div class="flex justify-center mb-4">
-        <img src="./src/images/card-images/devlopment.png" alt="" width="130">
+        <img src="./src/images/card-images/devlopment.webp" alt="" width="130" height="130">
       </div>
       <p class="text-center font-bold text-2xl mb-4">Development</p>
       <p class="font-semibold text-slate-900 text-center">Mewadahi kebutuhan pengembangan diri untuk alumni.</p>
     </div>
     <div class="h-[370px] mt-8 bg-white text-black rounded-xl px-3 pt-8" style="box-shadow: rgba(0, 0, 0, 0.801) 0px 3px 8px">
       <div class="flex justify-center mb-4">
-        <img src="./src/images/card-images/bisnis.jpg" alt="" width="130">
+        <img src="./src/images/card-images/bisnis.webp" alt="" width="130" height="130">
       </div>
       <p class="text-center font-bold text-2xl mb-4">Business Empowerment</p>
       <p class="font-semibold text-slate-900 text-center">Mewadahi aspirasi alumni baik yang berprofesi sebagai Professional, maupun Entrepreneur, untuk dapat berkarya dan melakukan bisnis.</p>
     </div>
     <div class="h-[370px] mt-8 bg-white text-black rounded-xl px-3 py-4" style="box-shadow: rgba(0, 0, 0, 0.801) 0px 3px 8px">
       <div class="flex justify-center">
-        <img src="./src/images/card-images/sosial.jpg" alt="" width="130">
+        <img src="./src/images/card-images/sosial.webp" alt="" width="130" height="130">
       </div>
       <p class="text-center font-bold text-2xl mb-4">Sosial</p>
       <p class="font-semibold text-slate-900 text-center">Mewadahi jalinan persaudaraan sesama alumni melalui kebersamaan dengan membangun support sistem antar sesama alumni dan disini juga para alumni memberikan hati untuk membantu sesama alumni yang membutuhkan baik yang sakit ataupun mengalami musibah.</p>
     </div>
     <div class="h-[370px] mt-8 bg-white text-black rounded-xl px-3 pt-8 mb-8" style="box-shadow: rgba(0, 0, 0, 0.801) 0px 3px 8px">
       <div class="flex justify-center mb-4">
-        <img src="./src/images/card-images/engagement-program.jpg" alt="" width="130">
+        <img src="./src/images/card-images/engagement-program.webp" alt="" width="130" height="130">
       </div>
       <p class="text-center font-bold text-2xl mb-4">Engagement</p>
       <p class="font-semibold text-slate-900 text-center">Meningkatkan jejaring sosial para alumni melalui platform sosial media yang ada untuk mempererat tali silaturahmi di antara alumni.</p>
@@ -182,11 +184,11 @@
 </div> -->
 </main>
 <!-- <hr class="text-white scale-y-150" style="box-shadow: rgba(209, 207, 207, 0.801) 0px 3px 8px;"> -->
-<footer class="min-h-[600px] bg-no-repeat bg-cover bg-center bg-fixed" style="background-image: url('./src/images/zoom-bg.jpg'); background-position-y: 100%;">
+<footer class="min-h-[600px] bg-no-repeat bg-cover bg-center bg-fixed" style="background-image: url('./src/images/zoom-bg.webp'); background-position-y: 100%;">
   <div class="flex flex-col bg-footer py-8 px-4 h-full w-full" style="background-color: rgba(0, 0, 0, 0.6);">
     <section class="flex-1 h-full flex items-center flex-col gap-4">
       <div class="flex flex-col w-full">
-        <img src="./src/images/ika_berdaya.png" alt="" width="140" class="self-center" />
+        <img src="./src/images/ika_berdaya.webp" alt="" width="140" class="self-center" height="auto" />
         <div class="flex flex-col text-center mb-4">
           <p class="ml-2 md:text-2xl text-white">Ikatan Keluarga Alumni</p>
           <p class="ml-2 text-2xl text-white">Bung Hatta Berdaya</p>
@@ -195,17 +197,17 @@
       <div class="flex gap-4">
         <div class="icon">
           <a href="https://www.facebook.com/profile.php?id=100079925951033">
-            <img src="./src/icon/Facebook.png" alt="" width="50">
+            <img src="./src/icon/Facebook.png" alt="" width="50" height="auto">
           </a>
         </div>
         <div class="icon">
           <a href="https://www.instagram.com/ika_bunghatta_berdaya/">
-            <img src="./src/icon/Instagram.png" alt="" width="50">
+            <img src="./src/icon/Instagram.png" alt="" width="50" height="auto">
           </a>
         </div>
         <div class="icon">
           <a href="https://twitter.com/IkaBungHattaBe1">
-            <img src="./src/icon/twitter.png" alt="" width="50">
+            <img src="./src/icon/twitter.png" alt="" width="50" height="auto">
           </a>
         </div>
       </div>
@@ -213,8 +215,8 @@
           <div class="flex flex-col gap-4 mt-2 md:mt-0 md:pl-20">
             <p class="text-orange-500">Home</p>
               <li class="text-white"><a href="#tentang" class="text-text-nav hover:text-orange-500">Tentang Ika Bung Hatta Berdaya</a></li>
-              <li class="text-white"><a href="" class="text-text-nav hover:text-orange-500">Keuntungan Bergabung</a></li>
-              <li class="text-white"><a href="" class="text-text-nav hover:text-orange-500">Program Kami</a></li>
+              <li class="text-white"><a href="#keuntungan" class="text-text-nav hover:text-orange-500">Keuntungan Bergabung</a></li>
+              <li class="text-white"><a href="#program" class="text-text-nav hover:text-orange-500">Program Kami</a></li>
               <li class="text-white"><a href="./src/visi-misi/" class="text-text-nav hover:text-orange-500">Visi Misi</a></li>
           </div>
           <div class="mt-8 flex flex-col gap-4 md:mt-0 md:pl-20">
@@ -223,7 +225,7 @@
               <li class="text-white"><a href="./src/struktur-organisasi/" class="text-text-nav hover:text-orange-500">Struktur Organisasi</a></li>
               <li class="text-white"><a href="./src/gallery/" class="text-text-nav hover:text-orange-500">Galery</a></li>
               <li class="text-white"><a href="" class="text-text-nav hover:text-orange-500">Event</a></li>
-              <li class="text-white"><a href="./src/kontak/" class="text-[#fff] hover:text-orange-500">Kontak Kami</a></li>
+              <li class="text-white"><a href="./src/kontak/" class="text-[#fff] hover:text-orange-500">Daftar</a></li>
             </div>
           </div>
         </div>
@@ -231,6 +233,10 @@
     </section>
   </div>
 </footer>
+<!-- <script>
+  AOS.init()
+</script> -->
 <script src="./src/script.js"></script>
+ <!-- <script src="bower_components/aos/dist/aos.js"></script> -->
 </body>
 </html>
